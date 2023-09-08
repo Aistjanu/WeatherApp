@@ -26,128 +26,139 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="container container-sm">
+    <div class="container">
+      <div class="weather-container container-sm">
+        <div class="row">
+          <div class="col">
+            <h1>
+              <i class="fa-solid fa-rainbow" style="color: #849561"></i>
+
+              RainCheck
+            </h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <form id="searchForm">
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="searchBarInput"
+                  class="form-control form-control-sm rounded"
+                  placeholder="Name your city"
+                  aria-label="Search"
+                  aria-describedby="search-addon"
+                  style="background-color: #ecefd8"
+                />
+                <input
+                  type="submit"
+                  value="Check it"
+                  id="searchButton"
+                  class="btn btn-sm"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-3">
+            <button id="locationButton" type="button" class="btn btn-sm">
+              My location
+            </button>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-sm text-end">
+            <h2><span id="currentCity">Toronto</span></h2>
+            <p>
+              <span id="currentDay">Friday</span> |
+              <span id="currentTime">15:30</span>
+            </p>
+          </div>
+          <div class="col-sm-3 text-end">
+            <h2>
+              <span class="temperature" id="temperature">18</span>
+              <span class="tempUnits" id="tempUnits">
+                <a href="#" id="celsiusLink">°C</a> |
+                <a href="#" id="farenheitLink">°F</a>
+              </span>
+              <br />
+              <i class="fa-solid fa-cloud-sun"></i>
+            </h2>
+          </div>
+
+          <div class="col-sm text-start">
+            <p style="margin-bottom: 0px">
+              <span id="description">Sunny</span>
+              <br />
+              Humidity: <span id="humidity">48</span>%
+              <br />
+              Wind: <span id="wind">40</span> km/h
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <h3>Sat</h3>
+            <p>
+              <i class="fa-solid fa-smog" style="font-size: 40px"></i>
+              <br />
+              <strong>19°</strong> 11°
+            </p>
+          </div>
+          <div class="col-sm">
+            <h3>Sun</h3>
+            <p>
+              <i class="fa-solid fa-smog" style="font-size: 40px"></i>
+              <br />
+              <strong>19°</strong> 13°
+            </p>
+          </div>
+          <div class="col-sm">
+            <h3>Mon</h3>
+            <p>
+              <i class="fa-solid fa-cloud-sun" style="font-size: 40px"></i>
+              <br />
+              <strong>26°</strong> 15°
+            </p>
+          </div>
+          <div class="col-sm">
+            <h3>Tue</h3>
+            <p>
+              <i class="fa-solid fa-cloud-sun" style="font-size: 40px"></i>
+              <br />
+              <strong>24°</strong> 17°
+            </p>
+          </div>
+          <div class="col-sm">
+            <h3>Wed</h3>
+            <p>
+              <i class="fa-solid fa-sun" style="font-size: 40px"></i>
+              <br />
+              <strong>20°</strong> 14°
+            </p>
+          </div>
+          <div class="col-sm">
+            <h3>Thu</h3>
+            <p>
+              <i class="fa-solid fa-cloud" style="font-size: 40px"></i>
+              <br />
+              <strong>18°</strong> 14°
+            </p>
+          </div>
+        </div>
+      </div>
       <div class="row">
         <div class="col">
-          <h1>
-            <i class="fa-solid fa-rainbow" style="color: #849561"></i>
-
-            RainCheck
-          </h1>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <form id="searchForm">
-            <div class="input-group">
-              <input
-                type="text"
-                id="searchBarInput"
-                class="form-control form-control-sm rounded"
-                placeholder="Name your city"
-                aria-label="Search"
-                aria-describedby="search-addon"
-                style="background-color: #ecefd8"
-              />
-              <input
-                type="submit"
-                value="Check it"
-                id="searchButton"
-                class="btn btn-sm"
-              />
-            </div>
-          </form>
-        </div>
-        <div class="col-sm-3">
-          <button id="locationButton" type="button" class="btn btn-sm">
-            My location
-          </button>
-        </div>
-      </div>
-
-      <div class="row align-items-center">
-        <div class="col-sm text-end">
-          <h2><span id="currentCity">Toronto</span></h2>
-          <p>
-            <span id="currentDay">Friday</span> |
-            <span id="currentTime">15:30</span>
-          </p>
-        </div>
-        <div class="col-sm-3 text-end">
-          <h2>
-            <span class="temperature" id="temperature">18</span>
-            <span class="tempUnits" id="tempUnits">
-              <a href="#" id="celsiusLink">°C</a> |
-              <a href="#" id="farenheitLink">°F</a>
-            </span>
-            <br />
-            <i class="fa-solid fa-cloud-sun"></i>
-          </h2>
-        </div>
-
-        <div class="col-sm text-start">
-          <p style="margin-bottom: 0px">
-            <span id="description">Sunny</span>
-            <br />
-            Humidity: <span id="humidity">48</span>%
-            <br />
-            Wind: <span id="wind">40</span> km/h
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm">
-          <h3>Sat</h3>
-          <p>
-            <i class="fa-solid fa-smog" style="font-size: 40px"></i>
-            <br />
-            <strong>19°</strong> 11°
-          </p>
-        </div>
-        <div class="col-sm">
-          <h3>Sun</h3>
-          <p>
-            <i class="fa-solid fa-smog" style="font-size: 40px"></i>
-            <br />
-            <strong>19°</strong> 13°
-          </p>
-        </div>
-        <div class="col-sm">
-          <h3>Mon</h3>
-          <p>
-            <i class="fa-solid fa-cloud-sun" style="font-size: 40px"></i>
-            <br />
-            <strong>26°</strong> 15°
-          </p>
-        </div>
-        <div class="col-sm">
-          <h3>Tue</h3>
-          <p>
-            <i class="fa-solid fa-cloud-sun" style="font-size: 40px"></i>
-            <br />
-            <strong>24°</strong> 17°
-          </p>
-        </div>
-        <div class="col-sm">
-          <h3>Wed</h3>
-          <p>
-            <i class="fa-solid fa-sun" style="font-size: 40px"></i>
-            <br />
-            <strong>20°</strong> 14°
-          </p>
-        </div>
-        <div class="col-sm">
-          <h3>Thu</h3>
-          <p>
-            <i class="fa-solid fa-cloud" style="font-size: 40px"></i>
-            <br />
-            <strong>18°</strong> 14°
-          </p>
+          <a href="https://github.com/Aistjanu/WeatherApp" target="_blank"
+            >Open-source code</a
+          >
+          by Aiste Jan
         </div>
       </div>
     </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>

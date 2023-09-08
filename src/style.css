@@ -23,11 +23,11 @@ p {
   color: #393939;
   text-align: center;
 }
-.container {
+
+.weather-container {
   font-family: "DM Sans", sans-serif;
   max-width: 900px;
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 50px;
   border: solid 10px #ecefd8;
   border-radius: 15px;
   background-color: #eed690;
